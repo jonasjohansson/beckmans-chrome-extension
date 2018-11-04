@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Beckmans",
+	"version": "1.4",
+	"description": "Beckmans Chrome extension",
+	"web_accessible_resources": ["style.css"],
+	"content_scripts": [
+		{
+			"matches": ["http://www.schoolity.com/*", "https://www.schoolity.com/*"],
+			"js": ["app.js"],
+			"css": ["style.css"]
+		}
+	],
+	"permissions": ["tabs", "http://www.schoolity.com/*", "https://www.schoolity.com/*"],
+	"page_action": {
+		"default_popup": "popup.html"
+	}
+}

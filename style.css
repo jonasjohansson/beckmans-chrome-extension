@@ -1,0 +1,76 @@
+/*
+
+reference: https://schoolity.com/SchoolUtil.css
+
+*/
+
+:root {
+    --font-family: system-ui;
+    --background-color: #fff;
+    --menu-bar-color: #ddd;
+    --side-bar-color: #eee;
+    --side-bar-color-dark: #aaa;
+    --side-bar-color-light: #ccc;
+    --tabs-color: #ccc;
+}
+
+html body {
+    font-family: var(--font-family) !important;
+}
+
+body > * {
+    filter: grayscale(1) contrast(1.2) brightness(0.98) hue-rotate(190deg);
+}
+
+/* remove clutter */
+
+html .bar,
+html .material-icons.md-dark.header-icon,
+html .rounded-photo.tablayout-thumbnail-photo,
+html .search-wrapper,
+html .tree-image-holder {
+    display: none;
+}
+
+html .gwt-StackLayoutPanelHeader.stackLayoutPanel-header > div {
+    right: 0 !important;
+}
+
+.stackLayoutPanel {
+    margin-top: 0 !important;
+}
+
+/* change color */
+
+/*html .customMenuBar,
+html .customMenuBar-top {
+    background-color: var(--menu-bar-color);
+}
+
+html .bar,
+html .stackPanelLabel,
+html .searchbox {
+    background-color: inherit;
+}
+
+html .left-panel {
+    background-color: var(--side-bar-color);
+}
+
+html .tabs-panel {
+    background-color: var(--tabs-color);
+}
+
+html .stackLayoutPanel,
+html .gwt-StackLayoutPanelHeader {
+    background-color: var(--side-bar-color-darl) !important;
+}
+
+html .gwt-StackLayoutPanel .gwt-StackLayoutPanelContent {
+    background-color: var(--side-bar-color-light);
+}
+
+
+html .background {
+    background-color: var(--background-color);
+}*/
