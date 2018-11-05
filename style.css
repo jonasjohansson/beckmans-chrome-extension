@@ -19,7 +19,7 @@ html body {
 }
 
 body > * {
-    filter: grayscale(1) contrast(1.2) brightness(0.98) hue-rotate(190deg);
+    filter: grayscale(1) contrast(1.04) brightness(0.96) hue-rotate(190deg);
 }
 
 /* remove clutter */
