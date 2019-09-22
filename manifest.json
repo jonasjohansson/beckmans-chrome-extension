@@ -1,17 +1,17 @@
 {
 	"manifest_version": 2,
-	"name": "Beckmans",
+	"name": "Template Chrome Extension",
 	"version": "1.4.1",
-	"description": "Beckmans Chrome extension",
+	"description": "Template Chrome extension",
 	"web_accessible_resources": ["style.css"],
 	"content_scripts": [
 		{
-			"matches": ["http://www.schoolity.com/*", "https://www.schoolity.com/*"],
+			"matches": ["http://www.google.com/*", "https://www.google.com/*"],
 			"js": ["app.js"],
 			"css": ["style.css"]
 		}
 	],
-	"permissions": ["tabs", "http://www.schoolity.com/*", "https://www.schoolity.com/*"],
+	"permissions": ["tabs", "http://www.google.com/*", "https://www.google.com/*"],
 	"page_action": {
 		"default_popup": "popup.html"
 	}
