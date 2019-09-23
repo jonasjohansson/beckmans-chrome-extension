@@ -1,18 +1,18 @@
 {
 	"manifest_version": 2,
-	"name": "Template Chrome Extension",
-	"version": "1.4.1",
-	"description": "Template Chrome extension",
+	"name": "Sample Chrome Extension",
+	"version": "1.0.0",
+	"description": "Helps you make better versions of sites",
 	"web_accessible_resources": ["style.css"],
 	"content_scripts": [
 		{
-			"matches": ["http://www.google.com/*", "https://www.google.com/*"],
+			"matches": ["http://www.dn.se/*", "https://www.dn.se/*"],
 			"js": ["app.js"],
 			"css": ["style.css"]
 		}
 	],
-	"permissions": ["tabs", "http://www.google.com/*", "https://www.google.com/*"],
-	"page_action": {
-		"default_popup": "popup.html"
+	"permissions": ["activeTab", "tabs", "http://www.dn.se/*", "https://www.dn.se/*"],
+	"icons": {
+		"128": "icon.png"
 	}
 }
